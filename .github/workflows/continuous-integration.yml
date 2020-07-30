@@ -20,13 +20,13 @@ jobs:
     
     steps:
       - uses: actions/checkout@master #Clone the repository code at master
-      - name: Setup MSBuild Path
-        uses: warrenbuckley/Setup-MSBuild@v1
+#       - name: Setup MSBuild Path
+#         uses: warrenbuckley/Setup-MSBuild@v1
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v1.0.2
-      - name: Setup VS dev environment
-        uses: seanmiddleditch/gha-setup-vsdevenv@v1
-      - name: shellcheck
+#       - name: Setup VS dev environment
+#         uses: seanmiddleditch/gha-setup-vsdevenv@v1
+      - name: RestoreRoslyn
         shell: cmd
         run: |
           call "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools\Developer Command Prompt for VS 2019.lnk"
