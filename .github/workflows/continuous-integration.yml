@@ -30,7 +30,7 @@ jobs:
         shell: cmd
         run: |
           call "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools\Developer Command Prompt for VS 2019.lnk"
-          call ${{env.RoslynDir}}\Restore.cmd
+          call ${{env.RoslynDir}}\Build.cmd
 #       - name: RestoreRoslyn
 #         run: ./Restore.cmd
 #         working-directory: ${{env.RoslynDir}} #we do this in the roslyn subdirectory
